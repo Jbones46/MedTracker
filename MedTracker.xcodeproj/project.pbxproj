@@ -14,6 +14,9 @@
 		D0A072191BD8032D0002D152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A072171BD8032D0002D152 /* LaunchScreen.storyboard */; };
 		D0A072221BD803A60002D152 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072201BD803A60002D152 /* Medicine+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		D0A072231BD803A60002D152 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072211BD803A60002D152 /* Medicine.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A072281BD807EB0002D152 /* TrackerReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072271BD807EB0002D152 /* TrackerReminderVC.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A0722A1BD808010002D152 /* AddEditMedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072291BD808010002D152 /* AddEditMedVC.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A0722C1BD8082E0002D152 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0722B1BD8082E0002D152 /* MainTVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D0A0721A1BD8032D0002D152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A072201BD803A60002D152 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D0A072211BD803A60002D152 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		D0A072271BD807EB0002D152 /* TrackerReminderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerReminderVC.swift; sourceTree = "<group>"; };
+		D0A072291BD808010002D152 /* AddEditMedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditMedVC.swift; sourceTree = "<group>"; };
+		D0A0722B1BD8082E0002D152 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 		D0A072241BD803DB0002D152 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0A072271BD807EB0002D152 /* TrackerReminderVC.swift */,
+				D0A072291BD808010002D152 /* AddEditMedVC.swift */,
+				D0A0722B1BD8082E0002D152 /* MainTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -167,8 +176,11 @@
 			files = (
 				D0A072141BD8032D0002D152 /* MedTracker.xcdatamodeld in Sources */,
 				D0A072231BD803A60002D152 /* Medicine.swift in Sources */,
+				D0A072281BD807EB0002D152 /* TrackerReminderVC.swift in Sources */,
+				D0A0722C1BD8082E0002D152 /* MainTVC.swift in Sources */,
 				D0A0720C1BD8032D0002D152 /* AppDelegate.swift in Sources */,
 				D0A072221BD803A60002D152 /* Medicine+CoreDataProperties.swift in Sources */,
+				D0A0722A1BD808010002D152 /* AddEditMedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

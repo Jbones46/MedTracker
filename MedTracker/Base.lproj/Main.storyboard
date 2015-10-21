@@ -7,14 +7,14 @@
         <!--Med Tracker-->
         <scene sceneID="rEQ-TO-Ayv">
             <objects>
-                <tableViewController id="Bnv-C9-TAW" sceneMemberID="viewController">
+                <tableViewController id="Bnv-C9-TAW" customClass="MainTVC" customModule="MedTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eoW-fe-KJm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="rdt-Ff-2mw" detailTextLabel="FSQ-S3-FcE" style="IBUITableViewCellStyleSubtitle" id="bCU-2M-QQT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="rdt-Ff-2mw" detailTextLabel="FSQ-S3-FcE" imageView="evY-gQ-nW7" style="IBUITableViewCellStyleSubtitle" id="bCU-2M-QQT">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bCU-2M-QQT" id="g2o-A9-YeJ">
@@ -22,7 +22,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rdt-Ff-2mw">
-                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="78" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -30,13 +30,18 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FSQ-S3-FcE">
-                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="78" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pillgreenwhite" id="evY-gQ-nW7">
+                                            <rect key="frame" x="15" y="0.0" width="48" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </imageView>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -71,7 +76,7 @@
         <!--Add/Edit Med-->
         <scene sceneID="IRu-55-DpL">
             <objects>
-                <viewController id="34o-VT-CzF" sceneMemberID="viewController">
+                <viewController id="34o-VT-CzF" customClass="AddEditMedVC" customModule="MedTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P5n-F1-JLa"/>
                         <viewControllerLayoutGuide type="bottom" id="qrU-Ya-aPF"/>
@@ -91,7 +96,7 @@
         <!--Track/Remind-->
         <scene sceneID="sYc-6F-acX">
             <objects>
-                <viewController id="1MJ-cX-lWb" sceneMemberID="viewController">
+                <viewController id="1MJ-cX-lWb" customClass="TrackerReminderVC" customModule="MedTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jY2-kU-hQf"/>
                         <viewControllerLayoutGuide type="bottom" id="xtH-Mp-9mA"/>
@@ -128,6 +133,9 @@
             <point key="canvasLocation" x="347" y="-386"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pillgreenwhite" width="232" height="210"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZrR-Od-hha"/>
     </inferredMetricsTieBreakers>
