@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D0A0720C1BD8032D0002D152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0720B1BD8032D0002D152 /* AppDelegate.swift */; };
-		D0A0720E1BD8032D0002D152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0720D1BD8032D0002D152 /* ViewController.swift */; };
 		D0A072111BD8032D0002D152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A0720F1BD8032D0002D152 /* Main.storyboard */; };
 		D0A072141BD8032D0002D152 /* MedTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0A072121BD8032D0002D152 /* MedTracker.xcdatamodeld */; };
 		D0A072161BD8032D0002D152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A072151BD8032D0002D152 /* Assets.xcassets */; };
 		D0A072191BD8032D0002D152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A072171BD8032D0002D152 /* LaunchScreen.storyboard */; };
+		D0A072221BD803A60002D152 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072201BD803A60002D152 /* Medicine+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		D0A072231BD803A60002D152 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A072211BD803A60002D152 /* Medicine.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0A072081BD8032D0002D152 /* MedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A0720B1BD8032D0002D152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0A0720D1BD8032D0002D152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0A072101BD8032D0002D152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A072131BD8032D0002D152 /* MedTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedTracker.xcdatamodel; sourceTree = "<group>"; };
 		D0A072151BD8032D0002D152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A072181BD8032D0002D152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A0721A1BD8032D0002D152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A072201BD803A60002D152 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D0A072211BD803A60002D152 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,8 @@
 		D0A071FF1BD8032D0002D152 = {
 			isa = PBXGroup;
 			children = (
+				D0A072201BD803A60002D152 /* Medicine+CoreDataProperties.swift */,
+				D0A072211BD803A60002D152 /* Medicine.swift */,
 				D0A0720A1BD8032D0002D152 /* MedTracker */,
 				D0A072091BD8032D0002D152 /* Products */,
 			);
@@ -56,8 +60,10 @@
 		D0A0720A1BD8032D0002D152 /* MedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D0A072261BD803EF0002D152 /* Model */,
+				D0A072251BD803E40002D152 /* View */,
+				D0A072241BD803DB0002D152 /* Controller */,
 				D0A0720B1BD8032D0002D152 /* AppDelegate.swift */,
-				D0A0720D1BD8032D0002D152 /* ViewController.swift */,
 				D0A0720F1BD8032D0002D152 /* Main.storyboard */,
 				D0A072151BD8032D0002D152 /* Assets.xcassets */,
 				D0A072171BD8032D0002D152 /* LaunchScreen.storyboard */,
@@ -65,6 +71,27 @@
 				D0A072121BD8032D0002D152 /* MedTracker.xcdatamodeld */,
 			);
 			path = MedTracker;
+			sourceTree = "<group>";
+		};
+		D0A072241BD803DB0002D152 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D0A072251BD803E40002D152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D0A072261BD803EF0002D152 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A0720E1BD8032D0002D152 /* ViewController.swift in Sources */,
 				D0A072141BD8032D0002D152 /* MedTracker.xcdatamodeld in Sources */,
+				D0A072231BD803A60002D152 /* Medicine.swift in Sources */,
 				D0A0720C1BD8032D0002D152 /* AppDelegate.swift in Sources */,
+				D0A072221BD803A60002D152 /* Medicine+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
