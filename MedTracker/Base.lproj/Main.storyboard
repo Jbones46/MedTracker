@@ -214,6 +214,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-ff-idG">
                                 <rect key="frame" x="196" y="101" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="morningSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="M79-Cb-HTK"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BZ-LE-iZ7">
                                 <rect key="frame" x="253" y="106" width="15" height="21"/>
@@ -239,6 +242,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-NF-cQc">
                                 <rect key="frame" x="196" y="140" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="afternoonSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="CLm-su-YQo"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI7-0M-2Wg">
                                 <rect key="frame" x="253" y="145" width="15" height="21"/>
@@ -260,6 +266,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Igk-OM-gBz">
                                 <rect key="frame" x="196" y="179" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="eveningSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="zC7-nB-fsp"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lY-bG-xUa">
                                 <rect key="frame" x="253" y="184" width="15" height="21"/>
@@ -281,6 +290,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-V6-s5S">
                                 <rect key="frame" x="196" y="218" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="bedtimeSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="Nvp-je-sAQ"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-NU-pMr">
                                 <rect key="frame" x="253" y="223" width="15" height="21"/>
@@ -292,6 +304,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B0c-eT-GuT">
                                 <rect key="frame" x="20" y="284" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="morningReminderSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="vhG-vm-lrN"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQE-oa-8l3">
                                 <rect key="frame" x="253" y="289" width="15" height="21"/>
@@ -310,6 +325,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-in-u2Y">
                                 <rect key="frame" x="20" y="323" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="afternoonReminderSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="cqC-iz-jyF"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXh-cM-SJ2">
                                 <rect key="frame" x="253" y="328" width="15" height="21"/>
@@ -328,6 +346,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="02G-a0-ez4">
                                 <rect key="frame" x="20" y="362" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="eveningReminderSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="Zml-8w-Uou"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4Y-Gd-1pH">
                                 <rect key="frame" x="253" y="367" width="15" height="21"/>
@@ -346,6 +367,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="idV-nm-XBw">
                                 <rect key="frame" x="20" y="401" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="bedtimeReminderSwitchTapped:" destination="1MJ-cX-lWb" eventType="valueChanged" id="9AU-l0-KEb"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73D-30-zUa">
                                 <rect key="frame" x="253" y="406" width="15" height="21"/>
@@ -462,6 +486,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Track/Remind" id="5Ui-RH-EJQ"/>
+                    <connections>
+                        <outlet property="switchAfternoon" destination="ruX-NF-cQc" id="en4-hG-eLH"/>
+                        <outlet property="switchBedtime" destination="HIe-V6-s5S" id="P3J-Aa-HDi"/>
+                        <outlet property="switchEvening" destination="Igk-OM-gBz" id="iK4-Eq-lWv"/>
+                        <outlet property="switchMorning" destination="7hC-ff-idG" id="fG9-Ic-7de"/>
+                        <outlet property="switchReminderAfternoon" destination="FuP-in-u2Y" id="yl6-Zk-4mY"/>
+                        <outlet property="switchReminderBedtime" destination="idV-nm-XBw" id="Dy0-Nc-13E"/>
+                        <outlet property="switchReminderEvening" destination="02G-a0-ez4" id="Hax-bv-jkm"/>
+                        <outlet property="switchReminderMorning" destination="B0c-eT-GuT" id="NdG-vB-1oe"/>
+                        <outlet property="xAfternoon" destination="hI7-0M-2Wg" id="9WJ-2y-mKi"/>
+                        <outlet property="xBedtime" destination="hG7-NU-pMr" id="dsW-do-g1A"/>
+                        <outlet property="xEvening" destination="6lY-bG-xUa" id="tQc-cq-bA8"/>
+                        <outlet property="xMorning" destination="8BZ-LE-iZ7" id="FNt-Ef-eD4"/>
+                        <outlet property="xReminderAfternoon" destination="KXh-cM-SJ2" id="Yea-my-HYB"/>
+                        <outlet property="xReminderBedtime" destination="73D-30-zUa" id="84I-kr-j3l"/>
+                        <outlet property="xReminderEvening" destination="C4Y-Gd-1pH" id="EI2-OU-3S8"/>
+                        <outlet property="xReminderMorning" destination="nQE-oa-8l3" id="Q1G-vF-Fhd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Kq-yO-uCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
