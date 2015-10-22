@@ -23,19 +23,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rdt-Ff-2mw">
-                                            <rect key="frame" x="78" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="78" y="2" width="39" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FSQ-S3-FcE">
-                                            <rect key="frame" x="78" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="78" y="26" width="50" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pillgreenwhite" id="evY-gQ-nW7">
@@ -136,6 +136,9 @@
                                     <segment title="Bedtime"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="timeSelectorDidChange:" destination="34o-VT-CzF" eventType="valueChanged" id="xyX-xX-blA"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <animations/>
@@ -162,8 +165,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit Med" id="C68-Ia-vOi">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="beA-n2-158"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="beA-n2-158">
+                            <connections>
+                                <action selector="saveTapped:" destination="34o-VT-CzF" id="FmA-8d-sTs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="medDosage" destination="6w8-da-Oyl" id="Q2a-86-NfJ"/>
+                        <outlet property="medName" destination="gvr-NU-JQF" id="yvJ-kR-eEt"/>
+                        <outlet property="medTime" destination="hR4-wT-lmG" id="vg7-LG-6eS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opW-8h-BMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
